@@ -3,7 +3,7 @@
     <p class="text-3xl font-bold">Buttons</p>
     <div>
       <p class="text-xl font-semibold mb-2">Base</p>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 mb-2">
         <MyButton type="black">Black</MyButton>
         <MyButton type="primary">Primary</MyButton>
         <MyButton type="secondary">Secondary</MyButton>
@@ -12,7 +12,7 @@
       </div>
 
       <code id="base-block" ref="baseButtonsRef" data-lang="vue">
-        <pre>{{ `
+        <pre class="p-2">{{ `
 <template>
   <div class="flex items-center gap-3 mb-5">
     <my-button type="black">Black</my-button>
@@ -27,7 +27,7 @@
     </div>
     <div>
       <p class="text-xl font-semibold mb-2">Loading</p>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 mb-2">
         <MyButton loading type="black">Black</MyButton>
         <MyButton loading type="primary">Primary</MyButton>
       </div>
@@ -47,7 +47,7 @@
     </div>
     <div>
       <p class="text-xl font-semibold mb-2">Icon button</p>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 mb-2">
         <MyButton :left-icon="EnvelopeIcon" type="black">Black</MyButton>
         <MyButton :right-icon="EnvelopeIcon" type="primary">Primary</MyButton>
       </div>
@@ -67,7 +67,7 @@
     </div>
     <div>
       <p class="text-xl font-semibold mb-2">Size</p>
-      <div class="flex items-center gap-3">
+      <div class="flex items-center gap-3 mb-2">
         <MyButton :right-icon="EnvelopeIcon" type="black" size="small"
           >Small</MyButton
         >
@@ -115,7 +115,7 @@ onMounted(() => {
     baseButtonsRef,
     loadingButtonsRef,
     iconButtonsRef,
-    sizeButtonsRef
+    sizeButtonsRef,
   );
 });
 </script>

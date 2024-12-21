@@ -4,7 +4,7 @@ export { default as highlighter } from "./core";
 export * from "./config";
 
 // Composables [Hooks]
-export * from "./composables";
+export * from "../../composables";
 
 // Helpers
 export * from "./helpers";
